@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'custom_widget.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         body: CustomWidget(),
       ),
@@ -10,30 +11,4 @@ void main() {
   );
 }
 
-//Custom Widget
-class CustomWidget extends StatelessWidget {
-  @override
-  Widget build(context) {
-    return Container(
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            Colors.cyan,
-            Colors.indigo,
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomCenter,
-        ),
-      ),
-      child: const Center(
-        child: Text(
-          'Hello World!',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 28,
-          ),
-        ),
-      ),
-    );
-  }
-}
+
