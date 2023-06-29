@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
         body: CustomWidget(),
       ),
@@ -12,9 +12,6 @@ void main() {
 
 //Custom Widget
 class CustomWidget extends StatelessWidget {
-  const CustomWidget({super.key});
-  //Or
-  //CustomWidget({key}):super(key:key);
   @override
   Widget build(context) {
     return Container(
