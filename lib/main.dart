@@ -6,13 +6,23 @@ void main() {
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
-            gradient: LinearGradient(colors: [
-              Color.fromARGB(255, 20, 199, 0),
-              Color.fromARGB(255, 139, 219, 0),
-            ]),
+            gradient: LinearGradient(
+              colors: [
+                Colors.cyan,
+                Colors.indigo,
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomCenter,
+            ),
           ),
           child: const Center(
-            child: Text('data'),
+            child: Text(
+              'Hello World!',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 28,
+              ),
+            ),
           ),
         ),
       ),
