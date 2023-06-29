@@ -10,6 +10,7 @@ void main() {
   );
 }
 
+//Custom Widget
 class CustomWidget extends StatelessWidget {
   const CustomWidget({super.key});
   //Or
