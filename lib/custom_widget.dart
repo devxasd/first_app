@@ -1,3 +1,4 @@
+import 'package:first_app/styled_text.dart';
 import 'package:flutter/material.dart';
 
 class CustomWidget extends StatelessWidget {
@@ -16,13 +17,7 @@ class CustomWidget extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: Text(
-          'Hello World!',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 28,
-          ),
-        ),
+        child: StyledText(),
       ),
     );
   }
