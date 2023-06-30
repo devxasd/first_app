@@ -9,6 +9,11 @@ class CustomWidget extends StatelessWidget {
 
   // ignore: prefer_typing_uninitialized_variables
   final color1, color2;
+
+  //function defination
+  void rollDice() {
+    //code
+  }
   @override
   Widget build(context) {
     return Container(
@@ -24,9 +29,30 @@ class CustomWidget extends StatelessWidget {
         ),
       ),
       child: Center(
-        child: Image.asset(
-          'assets/images/dice-1.png',
-          width: 200,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const StyledText('Roll Dice App'),
+            Image.asset(
+              'assets/images/dice-1.png',
+              width: 200,
+            ),
+            FilledButton(
+              //Normal Function calling
+              onPressed: rollDice,
+              child: const Text('Roll Dice'),
+            ),
+            TextButton(
+              //Anonymous function
+              onPressed: () {},
+              child: const Text(
+                "Learn More",
+                style: TextStyle(
+                  color: Colors.red,
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
