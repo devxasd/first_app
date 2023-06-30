@@ -42,14 +42,22 @@ class CustomWidget extends StatelessWidget {
               onPressed: rollDice,
               child: const Text('Roll Dice'),
             ),
+            //I used for giving empty space
+            const SizedBox(
+              height: 30,
+            ),
             TextButton(
               //Anonymous function
               onPressed: () {},
+              style: TextButton.styleFrom(
+                  padding: const EdgeInsets.all(20),
+                  textStyle: const TextStyle(
+                    fontSize: 20,
+                  ),
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.blueAccent),
               child: const Text(
                 "Learn More",
-                style: TextStyle(
-                  color: Colors.red,
-                ),
               ),
             ),
           ],
