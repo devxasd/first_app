@@ -6,7 +6,7 @@ class CustomWidget extends StatelessWidget {
   const CustomWidget(this.color1, this.color2, {super.key});
   //Or
   //const CustomWidget({super.key,required this.color1,required this.color2});
-  
+
   // ignore: prefer_typing_uninitialized_variables
   final color1, color2;
   @override
@@ -23,8 +23,11 @@ class CustomWidget extends StatelessWidget {
           end: Alignment.bottomCenter,
         ),
       ),
-      child: const Center(
-        child: StyledText(),
+      child: Center(
+        child: Image.asset(
+          'assets/images/dice-1.png',
+          width: 200,
+        ),
       ),
     );
   }
