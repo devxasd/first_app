@@ -9,7 +9,7 @@ void main() {
     const MaterialApp(
       home: Scaffold(
         //Passing arguments 
-        body: CustomWidget(color1, color2),
+        body: CustomWidget(),
       ),
     ),
   );
